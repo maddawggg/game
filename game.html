@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gaming Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            color: #fff;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #ddd;
+        }
+        section {
+            padding: 20px;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .game-card {
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .game-card h3 {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to the Gaming Hub</h1>
+        <p>Your ultimate destination for gaming news, reviews, and trailers.</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#games">Games</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section id="games">
+        <h2>Popular Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <img src="https://universe.flyff.com/storage/img/logofull.png" alt="Game 1">
+                <h3>Flyff Universe</h3>
+                <a href="https://universe.flyff.com/play">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/200" alt="Game 2">
+                <h3>Game Title 2</h3>
+                <a href="">Play Now</a>
+            </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/200" alt="Game 3">
+                <h3>Game Title 3</h3>
+                <a href="https://example.com/game3">Play Now</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gaming Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
